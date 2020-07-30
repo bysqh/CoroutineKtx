@@ -39,3 +39,23 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
 }
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.9.2'
+    }
+}
+
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = 'sjianjun'
+    groupId = 'com.sjianjun'
+    artifactId = 'coroutine'
+    publishVersion = '0.0.1'
+    desc = 'CoroutineKtx'
+    website = 'https://github.com/SJJ-dot/CoroutineKtx'
+}
