@@ -1,7 +1,7 @@
 package com.sjianjun.coroutine.app
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.sjianjun.app.R
 import com.sjianjun.coroutine.dialog
 import com.sjianjun.coroutine.launch

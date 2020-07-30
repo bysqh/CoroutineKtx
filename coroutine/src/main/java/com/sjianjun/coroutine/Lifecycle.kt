@@ -1,6 +1,7 @@
 package com.sjianjun.coroutine
 
-import android.arch.lifecycle.Lifecycle
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.coroutineScope
 import kotlinx.coroutines.*
 import java.util.concurrent.ConcurrentHashMap
 import kotlin.coroutines.CoroutineContext

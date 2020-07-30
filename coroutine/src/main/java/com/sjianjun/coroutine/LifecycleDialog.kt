@@ -1,9 +1,9 @@
 package com.sjianjun.coroutine
 
 import android.app.Dialog
-import android.arch.lifecycle.Lifecycle
-import android.arch.lifecycle.LifecycleOwner
-import android.arch.lifecycle.LifecycleRegistry
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.LifecycleRegistry
 import android.content.Context
 import android.view.ViewGroup
 

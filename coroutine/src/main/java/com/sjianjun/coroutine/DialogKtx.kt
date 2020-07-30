@@ -2,7 +2,7 @@ package com.sjianjun.coroutine
 
 import android.app.Activity
 import android.app.Dialog
-import android.support.annotation.IdRes
+import androidx.annotation.IdRes
 import android.view.View
 import android.widget.TextView
 
