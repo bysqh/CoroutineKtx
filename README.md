@@ -20,7 +20,7 @@ allprojects {
 
 dependencies {
     //...
-    implementation 'com.sjianjun:coroutine:0.0.1'
+    implementation 'com.sjianjun:coroutine:0.0.2'
 
 }
 
