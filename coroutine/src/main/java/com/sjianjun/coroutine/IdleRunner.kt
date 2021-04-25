@@ -2,6 +2,7 @@ package com.sjianjun.coroutine
 
 import android.os.Handler
 import android.os.Looper
+import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
@@ -17,13 +18,15 @@ fun runOnIdle(runner: () -> Unit) {
     }
 }
 
-suspend inline fun <T> withIdle(crossinline runner: () -> T) {
+suspend inline fun <T> withIdle(crossinline runner: suspend () -> T) {
     suspendCancellableCoroutine<T> {
-        runOnIdle{
-            try {
-                it.resume(runner())
-            } catch (e: Throwable) {
-                it.resumeWithException(e)
+        runOnIdle {
+            runBlocking {
+                try {
+                    it.resume(runner())
+                } catch (e: Throwable) {
+                    it.resumeWithException(e)
+                }
             }
         }
     }
