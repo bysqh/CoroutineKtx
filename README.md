@@ -9,10 +9,14 @@
 
 ```groovy
 
-dependencies {
-    //...
-    implementation 'com.sjianjun:coroutine:0.0.2'
-
-}
-
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+    
+	dependencies {
+	        implementation 'com.github.SJJ-dot:CoroutineKtx:0.0.3'
+	}
 ```
