@@ -1,4 +1,4 @@
-# CoroutineKtx
+# CoroutineKtx [![](https://jitpack.io/v/SJJ-dot/CoroutineKtx.svg)](https://jitpack.io/#SJJ-dot/CoroutineKtx)
 
 ### kotlin 协程扩展。
 
