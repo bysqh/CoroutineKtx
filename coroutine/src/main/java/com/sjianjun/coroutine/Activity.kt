@@ -1,6 +1,6 @@
 package com.sjianjun.coroutine
 
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.Dispatchers
@@ -12,7 +12,7 @@ import kotlin.coroutines.CoroutineContext
  */
 
 
-fun ComponentActivity.launchIo(
+fun AppCompatActivity.launchIo(
     singleCoroutineKey: String = "",
     context: CoroutineContext = Dispatchers.IO,
     start: CoroutineStart = CoroutineStart.DEFAULT,
@@ -21,7 +21,7 @@ fun ComponentActivity.launchIo(
     return lifecycle.launch(singleCoroutineKey, context, start, block)
 }
 
-fun ComponentActivity.launch(
+fun AppCompatActivity.launch(
     singleCoroutineKey: String = "",
     context: CoroutineContext = Dispatchers.Main,
     start: CoroutineStart = CoroutineStart.DEFAULT,
